@@ -3,7 +3,9 @@
   <head>
     <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/map/map.js"></script>
+    <script src="js/map/LongPress.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title>GPS tracker Demo for hancube</title>
@@ -11,6 +13,9 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div id="map_canvas">hello world</div>
+    <div id="map_canvas"></div>
+    <div id="button_area">
+      <button id="btn-fetchLocations">test</button>
+    </div>
   </body>
 </html>
