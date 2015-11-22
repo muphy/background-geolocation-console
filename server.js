@@ -26,7 +26,10 @@ app.get('/devices', function(req, res) {
     res.send(rs);
   })
 });
-
+app.get('/', function(req, res, next) {
+  // res.render('index', { title: 'Express' });
+  res.sendfile(__dirname + '/index.html');
+});
 /**
 * GET /locations
 */
