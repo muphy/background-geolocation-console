@@ -170,11 +170,11 @@ var mapManager = new MapManager();
 $(function () {
 
 	$('#btn-fetchLocations').click(function (e) {
-		$.get("http://128.199.248.88:8080/locations", {})
+		$.get("http://128.199.248.88:8080/locations?start_date=2015-11-22&end_date=2015-11-30", {})
 			.done(function (response) {
 				console.log('response data:', response);
 				var polylineCoordinates = _(response).map(function(e) {
-					console.log(e);
+					// console.log(e);
 					return mapManager.setCurrentLocationMarker(e);
 				})
 
@@ -189,6 +189,7 @@ $(function () {
 				map.setCenter(polylineCoordinates[0]);
 				polyline.setMap(map);
 			});
+			return false;
 	})
 
 });

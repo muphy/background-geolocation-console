@@ -38,7 +38,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/bootstrap-table.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
   <!-- Latest compiled and minified Locales -->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-ko-KR.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.9.1/locale/bootstrap-table-zh-CN.min.js"></script>
   <script src="js/underscore.js"></script>
   <script src="js/map/map.js"></script>
   <script src="js/map/app.js"></script>
@@ -62,21 +62,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top">GPS tracker for hancube</a>
+        <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li>
-            <a class="page-scroll" href="#page-top">지도보기</a>
+          <li class="hidden">
+            <a class="page-scroll" href="#page-top"></a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">추적 데이타 보기</a>
+            <a class="page-scroll" href="#about">About</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">부모아이 연결</a>
+            <a class="page-scroll" href="#services">Services</a>
           </li>
           <li>
             <a class="page-scroll" href="#contact">Contact</a>
@@ -95,18 +95,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">지도</h3>
-            </div>
-            <div class="panel-body">
-              <div id="map_canvas"></div>
-              <div id="buttons">
-                <button id="btn-fetchLocations" class="btn btn-primary" href="#about">최근 경로 보기</button>
-              </div>
-            </div>
-          </div>
-
+          <h1>지도</h1>
+          <p></p>
+          <div id="map_canvas"></div>
+          <a id="btn-fetchLocations" class="btn btn-default page-scroll" href="#about">최근 경로 보기</a>
         </div>
       </div>
     </div>
@@ -117,15 +109,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">추적데이타</h3>
-            </div>
-            <div class="panel-body">
-              <table id="table"></table>
-            </div>
-          </div>
-
+          <h1>About Section</h1>
+          <table id="table"></table>
         </div>
       </div>
     </div>
@@ -136,27 +121,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">부모아이 연결</h3>
-            </div>
-            <div class="panel-body">
-              <form class="form-inline">
-                <div class="form-group">
-                  <label for="parentDeviceId">부모 스마트폰고유키</label>
-                  <input type="text" class="form-control" id="parentDeviceId" placeholder="device id 를 입력하세요.">
-                </div>
-                <div class="form-group">
-                  <label for="childDeviceId">아이 스마트폰고유키</label>
-                  <input type="text" class="form-control" id="childDeviceId" placeholder="device id 를 입력하세요.">
-                </div>
-                <button id="btn-conntect-parent-and-child" class="btn btn-primary">연결하기</button>
-                <span id="helpBlock" class="help-block text-success">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-              </form>
-            </div>
-          </div>
-
+          <h1>Services Section</h1>
         </div>
       </div>
     </div>
