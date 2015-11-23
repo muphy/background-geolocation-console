@@ -76,9 +76,9 @@
             <a class="page-scroll" href="#about">추적 데이타 보기</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">부모아이 연결</a>
+            <a class="page-scroll" href="#services">보호자 피보호자 연결</a>
           </li>
-          <li>
+          <li class="hidden">
             <a class="page-scroll" href="#contact">Contact</a>
           </li>
         </ul>
@@ -139,20 +139,20 @@
 
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">부모아이 연결</h3>
+              <h3 class="panel-title">보호자 피보호자 연결</h3>
             </div>
             <div class="panel-body">
               <form class="form-inline">
                 <div class="form-group">
-                  <label for="parentDeviceId">부모 스마트폰고유키</label>
+                  <label for="parentDeviceId">보호자 스마트폰고유키</label>
                   <input type="text" class="form-control" id="parentDeviceId" placeholder="device id 를 입력하세요.">
                 </div>
                 <div class="form-group">
-                  <label for="childDeviceId">아이 스마트폰고유키</label>
+                  <label for="childDeviceId">피보호자 스마트폰고유키</label>
                   <input type="text" class="form-control" id="childDeviceId" placeholder="device id 를 입력하세요.">
                 </div>
                 <button id="btn-conntect-parent-and-child" class="btn btn-primary">연결하기</button>
-                <span id="helpBlock" class="help-block text-success">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <span id="helpBlock" class="help-block text-success">보호자가 설정한 geofence 를 피보호자가 들어오거나 나갈 때 보호자에게 알림이 전달됩니다.</span>
               </form>
             </div>
           </div>
