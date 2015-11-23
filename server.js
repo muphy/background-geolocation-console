@@ -8,7 +8,8 @@ var dbFile      = "db/background-geolocation.db";
 // Init db.
 var dbh = initDB(dbFile);
 
-app.use(express.static('.'));
+// app.use(express.static('.'));
+app.use('/', express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 app.all('*', function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
