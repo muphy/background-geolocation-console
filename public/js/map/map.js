@@ -170,7 +170,7 @@ var mapManager = new MapManager();
 $(function () {
 
 	$('#btn-fetchLocations').click(function (e) {
-		$.get("http://localhost:8080/locations", {})
+		$.get("http://http://128.199.248.88:8080/locations", {})
 			.done(function (response) {
 				console.log('response data:', response);
 				var polylineCoordinates = _(response).map(function(e) {
